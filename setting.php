@@ -13,13 +13,13 @@
           <p>姓名必须保证真实性，否则提交时可能会覆盖他人文件或者提交无效。</p>
           <?php
           $ifuser = ($_COOKIE["user"]);
-          $guest = 'guest';
+          $guest = '';
           if ($ifuser == $guest) {
-            echo  '<h4 class="mdui-text-color-indigo">同学，您好。请设置姓名。</h4>
-            <form name="setname" method="post" action="finished.php">
+            echo  '<form name="setname" method="post" action="finished.php">
               <div class="mdui-textfield mdui-textfield-floating-label">
                 <label class="mdui-textfield-label">姓名</label>
-                <input class="mdui-textfield-input" type="text" name="name" maxlength="3" />
+                <input class="mdui-textfield-input" type="text" name="name" maxlength="3" required />
+                <div class="mdui-textfield-error">姓名不能为空</div>
               </div>
             <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">确定设置</button>
             </form>';

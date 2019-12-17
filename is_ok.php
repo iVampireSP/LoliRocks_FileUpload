@@ -12,7 +12,7 @@
           </h3>
           <?php
           $ifuser = ($_COOKIE["user"]);
-          $guest = 'guest';
+          $guest = '';
           if ($ifuser == $guest) {
             echo  '<h4 class="mdui-text-color-indigo">同学，您好。请设置姓名。</h4>
               <a href="setting.php"
@@ -21,7 +21,7 @@
 			  today();
           }else {
             echo "<h4 class=\"mdui-text-color-indigo\">您好，$ifuser 。</h4>
-              <br /><p>您已经提交完成了。如果您需要覆盖您的文件，可以重新提交。</p>";
+              <br /><p>提交完成。如果您提交错误，可以重新提交以覆盖之前提交的文件，但是之前提交的文件无法找回。</p>";
           }
             today();
 			footer();

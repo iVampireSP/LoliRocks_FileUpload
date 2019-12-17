@@ -13,9 +13,9 @@
           <?php
 
           $ifuser = ($_COOKIE["user"]);
-          $guest = 'guest';
+          $guest = '';
           if ($ifuser == $guest) {
-            echo  '<h4 class="mdui-text-color-indigo">同学，您好。请设置姓名。</h4>
+            echo  '<h4 class="mdui-text-color-indigo">同学，您好。请设置姓名。否则无法提交。</h4>
               <a href="setting.php"
               <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">设置姓名</button></a>';
           }else {

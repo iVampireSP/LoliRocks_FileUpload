@@ -12,7 +12,7 @@
           </h3>
           <?php
           $ifuser = ($_COOKIE["user"]);
-          $guest = 'guest';
+          $guest = '';
           if ($ifuser == $guest) {
             echo  '<h4 class="mdui-text-color-indigo">同学，您好。请设置姓名。</h4>
               <a href="setting.php"
