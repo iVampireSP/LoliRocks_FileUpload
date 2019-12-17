@@ -15,13 +15,13 @@
           $guest = '';
           if ($ifuser == $guest) {
             echo  '<h4 class="mdui-text-color-indigo">同学，您好。请设置姓名。</h4>
-              <a href="setting.php"
+              <a href="setting.php">
               <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">设置姓名</button></a>';
 			echo "&nbsp;<button class=\"mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple\" mdui-dialog=\"{target: '#today'}\">查看作业</button>";
 			  today();
           }else {
             echo "<h4 class=\"mdui-text-color-indigo\">您好，$ifuser 。</h4>
-              <a href=\"upload.php\"
+              <a href=\"upload.php\">
               <button class=\"mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent\">提交文件</button></a>
               <button class=\"mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple\" mdui-dialog=\"{target: '#today'}\">查看作业</button>";
           }
