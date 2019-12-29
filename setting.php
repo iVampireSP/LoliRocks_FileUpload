@@ -18,7 +18,7 @@
             echo  '<form name="setname" method="post" action="finished.php">
               <div class="mdui-textfield mdui-textfield-floating-label">
                 <label class="mdui-textfield-label">姓名</label>
-                <input class="mdui-textfield-input" type="text" name="name" maxlength="3" required />
+                <input class="mdui-textfield-input" type="text" name="name" maxlength="4" required />
                 <div class="mdui-textfield-error">姓名不能为空</div>
               </div>
             <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">确定设置</button>
