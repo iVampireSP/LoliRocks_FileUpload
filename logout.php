@@ -1,4 +1,4 @@
 <?php
-  setcookie (user,guest);
+  setcookie (user,"");
   header ("location: index.php");
 ?>

@@ -13,6 +13,7 @@
           <?php
           $ifuser = ($_COOKIE["user"]);
           $guest = '';
+          $filename = ($_GET["filename"]);
           if ($ifuser == $guest) {
             echo  '<h4 class="mdui-text-color-indigo">同学，您好。请设置姓名。</h4>
               <a href="setting.php"
@@ -22,6 +23,7 @@
           }else {
             echo "<h4 class=\"mdui-text-color-indigo\">您好，$ifuser 。</h4>
               <br /><p>提交完成。如果您提交错误，可以重新提交以覆盖之前提交的文件，但是之前提交的文件无法找回。</p>";
+              echo "如有需要，可以：<a class=\"mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent\" href=\"upload/$filename\"><i class=\"mdui-icon material-icons\">arrow_downward</i>下载/查看</button></a>";
           }
             today();
 			footer();
